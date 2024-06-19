@@ -8,3 +8,10 @@ hello:
 
 debug-hello:
 	${debug} .\hello.exe
+
+function:
+	${compiler} ${compiler_options} function.cpp
+	.\function.exe
+
+debug-function:
+	${debug} .\function.exe
