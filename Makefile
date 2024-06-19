@@ -1,5 +1,5 @@
 compiler := cl
-compiler_options := /Wall /EHsc /Zi
+compiler_options := /Wall /EHsc /Zi /std:c++20
 debug := devenv /DebugExe
 
 hello:
