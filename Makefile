@@ -2,16 +2,20 @@ compiler := cl
 compiler_options := /Wall /EHsc /Zi /std:c++20
 debug := devenv /DebugExe
 
-hello:
+hello-cpp:
 	${compiler} ${compiler_options} hello.cpp
 	.\hello.exe
 
-debug-hello:
+debug-hello-cpp:
 	${debug} .\hello.exe
 
-function:
+function-cpp:
 	${compiler} ${compiler_options} function.cpp
 	.\function.exe
 
-debug-function:
+debug-function-cpp:
 	${debug} .\function.exe
+
+header-cpp:
+	${compiler} ${compiler_options} header/*.cpp /link /out:header.exe
+	.\header.exe

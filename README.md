@@ -3,11 +3,11 @@
 ## How to compile
 
 ```
-make <FILENAME-WITHOUT-EXTENSION>
+make <MAKEFILE-TARGET>
 ```
 
 example:
 
 ```
-make hello
+make hello-cpp
 ```
