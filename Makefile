@@ -13,9 +13,10 @@ function-cpp:
 	${compiler} ${compiler_options} function.cpp
 	.\function.exe
 
-debug-function-cpp:
-	${debug} .\function.exe
-
 header-cpp:
 	${compiler} ${compiler_options} header/*.cpp /link /out:header.exe
 	.\header.exe
+
+sizeof-cpp:
+	${compiler} ${compiler_options} sizeof.cpp 
+	.\sizeof.exe
