@@ -2,21 +2,25 @@ compiler := cl
 compiler_options := /Wall /EHsc /Zi /std:c++20
 debug := devenv /DebugExe
 
-hello-cpp:
+hello_cpp:
 	${compiler} ${compiler_options} hello.cpp
 	.\hello.exe
 
-debug-hello-cpp:
+debug_hello_cpp:
 	${debug} .\hello.exe
 
-function-cpp:
+function_cpp:
 	${compiler} ${compiler_options} function.cpp
 	.\function.exe
 
-header-cpp:
+header_cpp:
 	${compiler} ${compiler_options} header/*.cpp /link /out:header.exe
 	.\header.exe
 
-sizeof-cpp:
+sizeof_cpp:
 	${compiler} ${compiler_options} sizeof.cpp 
 	.\sizeof.exe
+
+unique_ptr_cpp:
+	${compiler} ${compiler_options} smart_pointers/unique_ptr.cpp
+	.\unique_ptr.exe
