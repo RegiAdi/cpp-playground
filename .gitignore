@@ -38,3 +38,12 @@
 # IDE
 /.vscode
 /.vs
+*.vcxproj
+*.vcxproj.filters
+*.sln
+
+# CMake
+/CMakeFiles
+*.cmake
+CMakeCache.txt
+
